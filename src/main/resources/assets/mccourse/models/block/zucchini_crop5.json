@@ -1,6 +1,6 @@
 {
   "parent": "block/crop",
   "textures": {
-    "crop": "mccourse:block/zucchini_crop_stag5"
+    "crop": "mccourse:block/zucchini_crop_stage5"
   }
 }
