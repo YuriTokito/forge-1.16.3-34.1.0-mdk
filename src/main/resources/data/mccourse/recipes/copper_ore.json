@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "yyy",
+    "yxy",
+    "yyy"
+  ],
+  "key":
+  {
+    "y":
+    {
+      "item": "mccourse:copper_wire"
+    },
+    "x":
+    {
+      "item": "mccourse:copper_block"
+    }
+  },
+    "result":
+    {
+      "item": "minecraft:diamond"
+    }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xyx",
+    "xyx",
+    "   "
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "mccourse:copper_block"
+    },
+    "y":
+    {
+      "item": "minecraft:stick"
+    }
+  },
+  "result":
+  {
+    "item": "mccourse:copper_fence",
+    "count": 3
+  }
+}
