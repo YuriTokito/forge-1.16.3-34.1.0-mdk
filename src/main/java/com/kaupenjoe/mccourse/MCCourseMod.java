@@ -1,6 +1,7 @@
 package com.kaupenjoe.mccourse;
 
 import com.kaupenjoe.mccourse.block.ModBlocks;
+import com.kaupenjoe.mccourse.block.ModFluids;
 import com.kaupenjoe.mccourse.events.ModEvents;
 import com.kaupenjoe.mccourse.item.ModItems;
 import com.kaupenjoe.mccourse.util.Config;
@@ -55,6 +56,7 @@ public class MCCourseMod
         Registration.register();
         ModItems.register();
         ModBlocks.register();
+        ModFluids.register();
 
         MinecraftForge.EVENT_BUS.register(new ModEvents());
 

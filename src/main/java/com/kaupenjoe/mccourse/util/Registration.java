@@ -2,6 +2,8 @@ package com.kaupenjoe.mccourse.util;
 
 import com.kaupenjoe.mccourse.MCCourseMod;
 import net.minecraft.block.Block;
+import net.minecraft.dispenser.DefaultDispenseItemBehavior;
+import net.minecraft.fluid.Fluid;
 import net.minecraft.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -16,10 +18,14 @@ public class Registration
     public static final DeferredRegister<Item> ITEMS
             = DeferredRegister.create(ForgeRegistries.ITEMS, MCCourseMod.MOD_ID);
 
+    public static final DeferredRegister<Fluid> FLUIDS
+            = DeferredRegister.create(ForgeRegistries.FLUIDS, MCCourseMod.MOD_ID);
+
     public static void register()
     {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
         BLOCKS.register(eventBus);
         ITEMS.register(eventBus);
+        FLUIDS.register(eventBus);
     }
 }

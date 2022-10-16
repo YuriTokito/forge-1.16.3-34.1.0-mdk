@@ -2,6 +2,7 @@ package com.kaupenjoe.mccourse.item;
 
 import com.kaupenjoe.mccourse.MCCourseMod;
 import com.kaupenjoe.mccourse.block.ModBlocks;
+import com.kaupenjoe.mccourse.block.ModFluids;
 import com.kaupenjoe.mccourse.util.Registration;
 import jdk.nashorn.internal.ir.Block;
 import net.minecraft.inventory.EquipmentSlotType;
@@ -25,6 +26,7 @@ public class ModItems
     public static final RegistryObject<Item> COPPERED_APPLE =
             Registration.ITEMS.register("coppered_apple",
                     () -> new CopperedApple());
+
 
     public static final RegistryObject<Item> COPPER_SHOVEL =
             Registration.ITEMS.register("copper_shovel",
@@ -88,10 +90,17 @@ public class ModItems
                     () -> new ArmorItem(ModArmorMaterial.COPPER, EquipmentSlotType.FEET,
                             new Item.Properties().group(MCCourseMod.COURSE_TAB)));
 
-
+    /* CROPS */
     public static final RegistryObject<Item> ZUCCHINI_SEED =
             Registration.ITEMS.register("zucchini_seed",
                     () -> new  BlockItem(ModBlocks.ZUCCHINI_CROP.get(), new Item.Properties().group(MCCourseMod.COURSE_TAB)));
+
+    /* FLUIDS*/
+
+    public static final RegistryObject<Item> OIL_BUCKET =
+            Registration.ITEMS.register("oil_bucket",
+                    () -> new BucketItem(ModFluids.OIL_FLUID::get,
+                            new Item.Properties().group(MCCourseMod.COURSE_TAB).maxStackSize(1)));
 
 
     public static void register()
