@@ -23,6 +23,7 @@
   "block.mccourse.copper_fence_gate": "Copper Fence Gate",
   "block.mccourse.copper_pressure_plate": "Copper Pressure Plate",
   "block.mccourse.copper_button": "Copper Button",
+  "block.mccourse.electrifier": "Electrifier",
 
   "itemGroup.courseTab": "CourseTab"
 }

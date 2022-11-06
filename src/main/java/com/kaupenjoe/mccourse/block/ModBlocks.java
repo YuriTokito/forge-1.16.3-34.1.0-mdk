@@ -43,6 +43,10 @@ public class ModBlocks
             Registration.BLOCKS.register("zucchini_crop",
                     () -> new ZucchiniCrop(AbstractBlock.Properties.from(Blocks.WHEAT)));
 
+    public static final RegistryObject<Block> ELECTRIFIER = register("electrifier",
+            () -> new Electrifier(AbstractBlock.Properties.create(Material.IRON)
+                    .harvestTool(ToolType.PICKAXE)));
+
     public static void register() { }
 
     private static <T extends Block>RegistryObject<T> register(String name, Supplier<T> block)
