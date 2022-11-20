@@ -4,7 +4,6 @@ import com.kaupenjoe.mccourse.MCCourseMod;
 import com.kaupenjoe.mccourse.block.ModBlocks;
 import com.kaupenjoe.mccourse.block.ModFluids;
 import com.kaupenjoe.mccourse.util.Registration;
-import jdk.nashorn.internal.ir.Block;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
 import net.minecraft.item.crafting.Ingredient;
@@ -178,10 +177,11 @@ public class ModItems
         }
 
         @Override
-        public float func_230304_f_()
+        public float getKnockbackResistance()
         {
             return knockbackResisteance;
         }
+
     }
 
     public enum ModItemTier implements IItemTier

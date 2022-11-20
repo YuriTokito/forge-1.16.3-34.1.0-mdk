@@ -1,11 +1,13 @@
 package com.kaupenjoe.mccourse.block;
 
+import com.kaupenjoe.mccourse.tileentity.ModTileEntitites;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.HorizontalBlock;
 import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.state.DirectionProperty;
 import net.minecraft.state.StateContainer;
+import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.Mirror;
 import net.minecraft.util.Rotation;
 import net.minecraft.util.math.BlockPos;
@@ -125,6 +127,18 @@ public class Electrifier extends Block
             default:
                 return SHAPE_N;
         }
+    }
+
+    @Override
+    public TileEntity createTileEntity(BlockState state, IBlockReader world)
+    {
+        return ModTileEntitites.ELECTRIFIER_TILE_ENTITY.get().create();
+    }
+
+    @Override
+    public boolean hasTileEntity(BlockState state)
+    {
+        return true;
     }
 
     @Nullable
