@@ -2,7 +2,10 @@ package com.kaupenjoe.mccourse.setup;
 
 import com.kaupenjoe.mccourse.MCCourseMod;
 import com.kaupenjoe.mccourse.block.ModBlocks;
+import com.kaupenjoe.mccourse.container.ModContainers;
+import com.kaupenjoe.mccourse.screens.ElectrifierScreen;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.ScreenManager;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.world.World;
@@ -16,6 +19,8 @@ public class ClientProxy implements IProxy
     public void init()
     {
         RenderTypeLookup.setRenderLayer(ModBlocks.ZUCCHINI_CROP.get(), RenderType.getCutout());
+
+        ScreenManager.registerFactory(ModContainers.ELECTRIFIER_CONTAINER.get(), ElectrifierScreen::new);
     }
 
     @Override

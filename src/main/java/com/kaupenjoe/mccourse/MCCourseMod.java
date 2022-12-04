@@ -2,6 +2,7 @@ package com.kaupenjoe.mccourse;
 
 import com.kaupenjoe.mccourse.block.ModBlocks;
 import com.kaupenjoe.mccourse.block.ModFluids;
+import com.kaupenjoe.mccourse.container.ModContainers;
 import com.kaupenjoe.mccourse.events.ModEvents;
 import com.kaupenjoe.mccourse.item.ModItems;
 import com.kaupenjoe.mccourse.setup.ClientProxy;
@@ -97,6 +98,7 @@ public class MCCourseMod
         ModBlocks.register();
         ModFluids.register();
         ModTileEntitites.register();
+        ModContainers.register();
 
         // register mod events
         MinecraftForge.EVENT_BUS.register(new ModEvents());
