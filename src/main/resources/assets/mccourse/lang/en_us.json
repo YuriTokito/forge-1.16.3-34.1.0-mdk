@@ -24,6 +24,10 @@
   "block.mccourse.copper_pressure_plate": "Copper Pressure Plate",
   "block.mccourse.copper_button": "Copper Button",
   "block.mccourse.electrifier": "Electrifier",
+  "block.mccourse.redwood_planks": "Redwood Planks",
+  "block.mccourse.redwood_log": "Redwood Log",
+  "block.mccourse.redwood_leaves": "Redwood Leaves",
+  "block.mccourse.redwood_sapling": "Redwood Sapling",
 
   "itemGroup.courseTab": "CourseTab"
 }
